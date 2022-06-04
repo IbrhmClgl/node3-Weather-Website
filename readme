@@ -1,0 +1,3 @@
+Readme !
+
+Use nodemon src/app.js -e js,hbs command to run app locally.
