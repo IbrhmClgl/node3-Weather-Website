@@ -16,12 +16,17 @@ const forecast = (latitude, longitude, callback) => {
     } else {
       callback(
         undefined,
-        body.current.weather_descriptions[0] +
-          ' It is currently ' +
+        'It is ' +
+          body.current.weather_descriptions[0] +
+          '. Currently ' +
           body.current.temperature +
-          ' degrees out. There is a ' +
+          ' degrees out but it feels like ' +
+          body.current.feelslike +
+          ' degrees. ' +
           body.current.precip +
-          '% chance of rain'
+          ' % chance of rain with: ' +
+          body.current.humidity +
+          '% humidity.'
       );
     }
   });
