@@ -3,9 +3,10 @@ Readme !
 Use nodemon src/app.js -e js,hbs command to run app locally.
 
 Deploy your app via Heroku:
- 
+
 1. Setup your ssh key file with heroku, with this command: heroku keys:add
 2. Create your application: heroku create <yourAppName>
 3. Change package.jason file ! Add a property to "scripts" => "start":"node src/app.js"
-4. Create a port in app.js => process.env.PORT || 3000 
-5. Change app.listen() and add the new port 
+4. Create a port in app.js => process.env.PORT || 3000
+5. Change app.listen() and add the new port
+6. git push heroku main deploys our application via heroku
