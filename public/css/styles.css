@@ -62,3 +62,7 @@ button {
   color: white;
   padding: 8px;
 }
+
+body {
+  background-color: aliceblue;
+}
